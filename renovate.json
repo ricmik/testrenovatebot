@@ -7,7 +7,7 @@
     ":disableRateLimiting"
   ],
   "timezone": "Europe/Oslo",
-  "schedule": ["every weekend"],
+  "schedule": ["at any time"],
   "enabledManagers": [
     "kubernetes",
     "kustomize",
