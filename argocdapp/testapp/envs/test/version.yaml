@@ -5,5 +5,5 @@ metadata:
   namespace: argocd
 spec:
   source:
-    # The helm chart version to use
+    # renovate: registryUrl=https://charts.external-secrets.io chart=external-secrets
     targetRevision: "2.5.0"

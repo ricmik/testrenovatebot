@@ -56,5 +56,19 @@
   "prConcurrentLimit": 5,
   "prHourlyLimit": 2,
   "labels": ["renovate"],
-  "commitMessagePrefix": "chore(deps):"
+  "commitMessagePrefix": "chore(deps):",
+
+  "customManagers": [
+    {
+      "description": "Pick up helm chart versions from ArgoCD kustomize version patches",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)version\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "# renovate: registryUrl=(?<registryUrl>[^\\s]+) chart=(?<depName>[^\\s]+)\\n\\s+targetRevision: \"?(?<currentValue>[^\"\\n]+)\"?"
+      ],
+      "datasourceTemplate": "helm"
+    }
+  ]
 }
