@@ -16,7 +16,18 @@
     "argocd",
     "flux",
     "github-actions",
-    "terraform"
+    "terraform",
+    "regex"
+  ],
+
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
   ],
 
   "registryAliases": {
