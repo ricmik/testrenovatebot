@@ -75,7 +75,7 @@
     {
       "datasourceTemplate": "github-releases",
       "managerFilePatterns": [
-        "/(^|/)values.*\\.ya?ml$/"
+        "/\\.ya?ml$/"
       ],
       "matchStrings": [
         " +targetRevision: +(?<currentValue>[^'\" ]+) +# renovate: depName=(?<depName>[^ \\n]+) +(extractVersion=(?<extractVersion>[^\\n]+))?"
