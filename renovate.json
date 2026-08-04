@@ -23,10 +23,14 @@
   },
 
   "kubernetes": {
-    "fileMatch": ["\\.ya?ml$"]
+    "managerFilePatterns": [
+      "/\\.ya?ml$/"
+    ]
   },
   "helm-values": {
-    "fileMatch": ["(^|/)values.*\\.ya?ml$"]
+    "managerFilePatterns": [
+      "/(^|/)values.*\\.ya?ml$/"
+    ]
   },
 
   "packageRules": [
